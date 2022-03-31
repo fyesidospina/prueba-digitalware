@@ -10,8 +10,8 @@ BEGIN
 
 CREATE TABLE [dbo].[TL_Cliente](
        [id] [bigint] IDENTITY(1,1) NOT FOR REPLICATION NOT NULL,
-       [nombres] [varchar](10) NOT NULL,
-	   [apellidos] [varchar](10) NULL,
+       [nombres] [varchar](50) NOT NULL,
+	   [apellidos] [varchar](50) NULL,
        [edad] [bigint] NOT NULL    
 CONSTRAINT [PK_TL_Cliente] PRIMARY KEY CLUSTERED 
 (

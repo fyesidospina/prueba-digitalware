@@ -80,7 +80,7 @@ namespace api_back_facturacion.Controllers
             {
                 var obj = await _inventarioRepositorio.CreateUpdate(value);
                 _response.Result = obj;
-                return CreatedAtAction("Get", new { id = obj.id }, _response);
+                return CreatedAtAction("GetInventario", new { id = obj.id }, _response);
 
             }
             catch (Exception ex)
