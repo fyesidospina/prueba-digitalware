@@ -50,7 +50,7 @@ namespace api_back_facturacion.Repositorio
                 await _dbCont.SaveChangesAsync();
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return false;
             }
