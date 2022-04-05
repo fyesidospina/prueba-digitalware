@@ -6,7 +6,7 @@
 *****************************************************************************************/
 CREATE VIEW [vw_lista_cliente_no_mayor_35] AS
 select 
-	cl.nombres, cl.apellidos, cl.edad, fac.fecha_compra 
+fac.id, cl.nombres, cl.apellidos, cl.edad, fac.fecha_compra 
 from 
 	TL_Cliente cl
 	inner join TL_Facturacion fac on cl.id = fac.id_cliente

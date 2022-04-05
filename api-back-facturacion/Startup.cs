@@ -38,6 +38,15 @@ namespace api_back_facturacion
             services.AddScoped<IInventarioRepositorio, InventarioRepositorio>();
             services.AddScoped<IProductoRepositorio, ProductoRepositorio>();
             services.AddScoped<IFacturacionRepositorio, FacturacionRepositorio>();
+            
+            //views
+            services.AddScoped<IViewListaProductosRepositorio, ViewListaProductosRepositorio>();
+            services.AddScoped<ViewProductosExistenciaMinRepositorio, ViewProductosExistenciaMinRepositorio>();
+            services.AddScoped<IViewClienteNoMayorRepositorio, ViewClienteNoMayorRepositorio>();           
+            services.AddScoped<IViewVentaPorProductoAnoRepositorio, ViewVentaPorProductoAnoRepositorio>();
+            services.AddScoped<IViewPromedioCompraRepositorio, ViewPromedioCompraRepositorio>();
+
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

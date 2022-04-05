@@ -6,6 +6,7 @@
 *****************************************************************************************/
 CREATE VIEW [vw_lista_producto_existencia_min] AS
 select 
+	inv.id,
 	pr.nombre_producto, 
 	inv.existencia 
 from 

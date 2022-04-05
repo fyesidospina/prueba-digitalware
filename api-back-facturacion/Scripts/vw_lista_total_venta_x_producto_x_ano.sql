@@ -6,11 +6,12 @@
 *****************************************************************************************/
 CREATE VIEW [vw_lista_total_venta_x_producto_x_ano] AS
 select 
+	fac.id,
 	cl.nombre_producto, 
 	--inv.existencia,
 	fac.cantidad 'Cant_Vendido', 
 	inv.valor_und, 
-	(fac.cantidad * inv.valor_und)'TOTAL_VENDIDO',
+	(fac.cantidad * inv.valor_und)'total_venta',
 	fac.fecha_compra
 	--YEAR(fac.fecha_compra) as ano
 from 

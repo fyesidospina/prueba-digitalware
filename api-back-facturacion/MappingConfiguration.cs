@@ -25,6 +25,25 @@ namespace api_back_facturacion
                 conf.CreateMap<FacturacionDto, Facturacion>();
                 conf.CreateMap<Facturacion, FacturacionDto>();
 
+
+                //Views
+                conf.CreateMap<ViewListaProductosDto, ViewListaProductos>();
+                conf.CreateMap<ViewListaProductos, ViewListaProductosDto>();
+
+                conf.CreateMap<ViewProductosExistenciaMinDto, ViewProductosExistenciaMin>();
+                conf.CreateMap<ViewProductosExistenciaMin, ViewProductosExistenciaMinDto>();
+                
+                conf.CreateMap<ViewClienteNoMayorDto, ViewClienteNoMayor>();
+                conf.CreateMap<ViewClienteNoMayor, ViewClienteNoMayorDto>();
+
+
+                conf.CreateMap<ViewVentaPorProductoAnoDto, ViewVentaPorProductoAno>();
+                conf.CreateMap<ViewVentaPorProductoAno, ViewVentaPorProductoAnoDto>();
+
+                conf.CreateMap<ViewPromedioCompraDto, ViewPromedioCompra>();
+                conf.CreateMap<ViewPromedioCompra, ViewPromedioCompraDto>();
+
+
             });
 
             return mappingConfig;
